@@ -180,25 +180,68 @@ public class ClaseStringyMetodos {
                 case 19:
                     break;
                 case 20:
-                    
+                    //Método intern()
+                    String s1 = new String("hola");
+                    String s2 = "hola";
+                    String s3 = s1.intern();// regresa la cadena del espacio de memoria y lo asigna a s3
+                    System.out.println(s1 == s2);// false because reference variables are pointing to different instance
+                    System.out.println(s2 == s3);// true because reference variables are pointing to same instance
                     break;
                 case 21:
+                    //Método lastIndexOf ()
+                    String myStr = "Hello planet earth, you are a great planet.";
+                    System.out.println(myStr.lastIndexOf("planet"));
                     break;
                 case 22:
+                    // lastIndexOf (int ch, int fromIndex)
+                    String Str = new String("Welcome to Tutorialspoint.com");
+                    System.out.print("Found Last Index :");
+                    System.out.println(Str.lastIndexOf('o', 5));
                     break;
                 case 23:
+                    //lastIndexOf (String str)
+                    String Str2 = new String("Welcome to Tutorialspoint.com");
+                    System.out.print("Found Last Index :");
+                    System.out.println(Str2.lastIndexOf('o', 5));
+                    System.out.println(Str2.lastIndexOf("o"));
                     break;
                 case 24:
+                    // lastIndexOf () fromIndex
+                    String Str3 = new String("Welcome to Tutorialspoint.com");
+                    System.out.print("Found Last Index :");
+                    System.out.println(Str3.lastIndexOf('o', 5));
+                    System.out.println(Str3.lastIndexOf("o", 5));
                     break;
                 case 25:
+                    // length ()
+                    String cadenal= "Es una cadena";
+                    System.out.println("El tamaño de la cadena es: "+cadenal.length());
                     break;
                 case 26:
+                    // Matches(String regex)
+                    cadena= "Estamos estudiando POO";
+                    System.out.println(cadena.matches("Estamos"));//retorna falso porque en cadena no esta solo esa frase
+                    System.out.println(cadena.matches("Estamos(.*)"));//retorna verdadero porque hay mas despues de la frase
                     break;
                 case 27:
+                    cadena = "Welcome to Tutorialspoint.com";
+                    cadena2 = "Tutorials";
+                    String cadena4 = "TUTORIALS";
+                    System.out.println(cadena.regionMatches(11, cadena2, 0, 9));
+                    System.out.println(cadena.regionMatches(11, cadena4, 0, 9));
                     break;
                 case 28:
+                    cadena = "Welcome to Tutorialspoint.com";
+                    cadena2 = "Tutorials";
+                    cadena4 = "TUTORIALS";
+                    System.out.println(cadena.regionMatches(11, cadena2, 0, 9));
+                    System.out.println(cadena.regionMatches(11, cadena4, 0, 9));
                     break;
                 case 29:
+                    String S1 = new String("the quick fox jumped");
+                    System.out.println("Original String is ': " + S1);
+                    System.out.println("String after replacing 'fox' with 'dog': " + S1.replace("fox", "dog"));
+                    System.out.println("String after replacing all 't' with 'a': " + S1.replace('t', 'a'));
                     break;
                 case 30:
                     break;
