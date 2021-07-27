@@ -239,42 +239,124 @@ public class ClaseStringyMetodos {
                     break;
                 case 29:
                     String S1 = new String("the quick fox jumped");
-                    System.out.println("Original String is ': " + S1);
-                    System.out.println("String after replacing 'fox' with 'dog': " + S1.replace("fox", "dog"));
-                    System.out.println("String after replacing all 't' with 'a': " + S1.replace('t', 'a'));
+                    System.out.println("El texto original es': " + S1);
+                    System.out.println("Texto despues de reemplazar 'fox' con 'dog': " + S1.replace("fox", "dog"));
+                    System.out.println("Texto despues de remplazar las 't' with 'a': " + S1.replace('t', 'a'));
                     break;
                 case 30:
-                    cadena = "texto";
+                    cadena = "Esta es una cadena de caracteres";
+                    cadena2 = cadena.replaceAll("a", "o");// replaces all occurrences of "a" to "o"
+                    System.out.println(cadena2);
                     break;
                 case 31:
+                    cadena= "This website providing free tutorials";
+                    cadena2= cadena.replaceFirst("s", "9");
+                    System.out.println(cadena2);
                     break;
                 case 32:
+                    cadena = "123-654321";
+                    String[] partes = cadena.split("-");
+                    System.out.println("La cadena Original es: "+cadena);
+                    System.out.println(partes[0]);
+                    System.out.println(partes[1]);
                     break;
                 case 33:
+                    cadena = "123-654321-66351-55";
+                    String[] partes2 = cadena.split("-", 2);
+                    System.out.println("La cadena Original es: " + cadena);
+                    System.out.println(partes2[0]);
+                    System.out.println(partes2[1]);
                     break;
                 case 34:
+                    cadena="Hola";
+                    System.out.println(cadena.startsWith("H"));//true
+                    System.out.println(cadena.startsWith("F"));//false
                     break;
                 case 35:
+                    cadena = "Hola";
+                    System.out.println(cadena.startsWith("H", 2));// false
+                    System.out.println(cadena.startsWith("l", 2));// true
                     break;
                 case 36:
+                    cadena = "Welcome to geeksforgeeks";
+
+                    // prints the subsequence from 0-7, exclusive 7th index
+                    System.out.print("Retorna: ");
+                    System.out.println(cadena.subSequence(0, 7));
+
+                    System.out.print("Retorna: ");
+                    System.out.println(cadena.subSequence(10, 24));
                     break;
                 case 37:
+
+                    String Str37 = new String("Welcome to Tutorialspoint.com");
+
+                    System.out.print("Return Value :");
+                    System.out.println(Str37.substring(10));
                     break;
                 case 38:
+
+                    String Str38 = new String("Welcome to Tutorialspoint.com");
+
+                    System.out.print("Retorna :");
+                    System.out.println(Str38.substring(10, 15));
+
                     break;
                 case 39:
+
+                    String Str39 = new String("Welcome to Tutorialspoint.com");
+
+                    System.out.print("Retorna :");
+                    System.out.println(Str39.toCharArray());
                     break;
                 case 40:
+
+                    String Str40 = new String("Welcome to Tutorialspoint.com");
+
+                    System.out.print("Retorna :");
+                    System.out.println(Str40.toLowerCase());
                     break;
                 case 41:
+                    String Str41 = new String("Welcome to Tutorialspoint.com");
+
+                    System.out.print("Retorna :");
+                    System.out.println(Str41.toString());
+
                     break;
+
                 case 42:
+                    String Str42 = new String("Welcome to Tutorialspoint.com");
+
+                    System.out.print("Retorna :");
+                    System.out.println(Str42.toUpperCase());
+
                     break;
                 case 43:
+
+                    String Str43 = new String("Welcome to Tutorialspoint.com");
+
+                    System.out.print("Return Value :");
+                    System.out.println(Str43.toUpperCase());
                     break;
                 case 44:
+
+                    String Str44 = new String("   Welcome to Tutorialspoint.com   ");
+
+                    System.out.print("Retorna :");
+                    System.out.println(Str44.trim());
+
                     break;
                 case 45:
+                    double d = 102939939.939;
+                    boolean b = true;
+                    long l = 1232874;
+                    char[] arr = { 'a', 'b', 'c', 'd', 'e', 'f', 'g' };
+
+                    System.out.println("Retorna el valor : " + String.valueOf(d));
+                    System.out.println("Retorna el valor : " + String.valueOf(b));
+                    System.out.println("Retorna el valor : " + String.valueOf(l));
+                    System.out.println("Retorna el valor : " + String.valueOf(arr));
+
                     break;
             }
             
