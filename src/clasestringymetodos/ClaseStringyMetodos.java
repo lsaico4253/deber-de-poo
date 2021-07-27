@@ -1,10 +1,98 @@
 package clasestringymetodos;
+
+import java.util.Scanner;
+
 public class ClaseStringyMetodos {
     public static void main(String[] args) {
+        Scanner leer=new Scanner(System.in);
         int opc=1;
         do{
+            System.out.println("*******MENU CLASE STRING********");
+            System.out.println("1. charAt(int index)");
+            System.out.println("2. compareTo(Objeto o)");
+            System.out.println("3. compareTo(String otraCadena)");
+            System.out.println("4. compareToIgnoreCase(String str)");
+            System.out.println("5. concat(String str)");
+            System.out.println("6. contentEquals ()");
+            System.out.println("7. String copyValueOf ()");
+            System.out.println("8. String copyValueOf(data, offset, count)");
+            System.out.println("9. String endsWith ()");
+            System.out.println("10. String equals ()");
+            System.out.println("11. String equalsIgnoreCase ()");
+            System.out.println("12. String getBytes() Method");
+            System.out.println("13. String getBytes(String charsetName)");
+            System.out.println("14. String getChars ()");
+            System.out.println("15. String hashCode ()");
+            System.out.println("16. Metodo indexOf(int ch)");
+            System.out.println("17. Método indexOf(int ch, int indice)");
+            System.out.println("18. Método indexOf(String str)");
+            System.out.println("19. Método indexOf(String str, int indice)");
+            System.out.println("20. Método intern()");
+            System.out.println("21. String lastIndexOf ()");
+            System.out.println("22. Cadena lastIndexOf (int ch, int fromIndex)");
+            System.out.println("23. String lastIndexOf (String str)");
+            System.out.println("24. String lastIndexOf () fromIndex");
+            System.out.println("25. String length ()");
+            System.out.println("26. Matches(String regex)");
+            System.out.println("27. RegionMatches(boolean ignoreCase, int offset, String otra, int offset, int len)");
+            System.out.println("28. RegionMatches(int offset, String other, int offset, int len)");
+            System.out.println("29. Replace(char viejo, char nuevo)");
+            System.out.println("30. ReplaceAll(String regex, String reemplazo)");
+            System.out.println("31. ReplaceFirst(String regex, String reemplazo)");
+            System.out.println("32. Split(String regex)");
+            System.out.println("33. Split(String regex, int limit)");
+            System.out.println("34. StartsWith(String prefijo)");
+            System.out.println("35. StartsWith(String prefijo, int offset)");
+            System.out.println("36. SubSequence(int inicio, int final)");
+            System.out.println("37. Substring(int inicio)");
+            System.out.println("38. Substring(int inicio, int final)");
+            System.out.println("39. ToCharArray()");
+            System.out.println("40. ToLowerCase()");
+            System.out.println("41. ToString()");
+            System.out.println("42. ToUpperCase()");
+            System.out.println("43. ToUpperCase(Locale locale)");
+            System.out.println("44. Trim()");
+            System.out.println("45. ValueOf(tipo de dato primitivo x)");
+            System.out.println("46. SALIR");
+            opc=leer.nextInt();
+            switch(opc){
+                case 1:
+                    //Método String charAt ()
+                    String s = "hola somos del M2A";
+                    char result = s.charAt(5);
+                    System.out.println("Método String charAt(5)");
+                    System.out.println("hola somos del M2A");
+                    System.out.println(result);
+                    System.out.println("  ");
+               
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    break;
+                case 6:
+                    break;
+                case 7:
+                    break;
+                case 8:
+                    break;
+                case 9:
+                    break;
+                case 10:
+                    break;
+                case 11:
+                    break;
+            }
             
-        }while(opc==1);
+            
+            
+            
+            
+        }while(opc>=1 && opc<=46);
        
 //        //Método String charAt ()
 //        String s = "hola somos del M2A";
