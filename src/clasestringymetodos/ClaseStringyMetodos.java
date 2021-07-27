@@ -244,6 +244,7 @@ public class ClaseStringyMetodos {
                     System.out.println("String after replacing all 't' with 'a': " + S1.replace('t', 'a'));
                     break;
                 case 30:
+                    cadena = "texto";
                     break;
                 case 31:
                     break;
